@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { FaArrowRight, FaCode, FaCss3Alt, FaJsSquare } from "react-icons/fa";
 import { Project } from "@/lib/constants";
+import { useEffect, useRef } from "react";
+import VanillaTilt from "vanilla-tilt";
 
 interface ProjectCardProps {
   project: Project;
