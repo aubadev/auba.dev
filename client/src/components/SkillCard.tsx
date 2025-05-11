@@ -82,6 +82,7 @@ const SkillCard = ({ skill, index }: SkillCardProps) => {
         className="bg-dark-850/80 backdrop-blur-sm rounded-xl p-5 glass card-hover border border-dark-800 relative overflow-hidden"
         whileHover={{ 
           y: -8,
+          zIndex: 10,
           boxShadow: "0 20px 40px -10px rgba(0, 0, 0, 0.5)",
           transition: { type: "spring", stiffness: 400, damping: 10 }
         }}

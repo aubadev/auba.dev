@@ -95,7 +95,14 @@ const About = () => {
                 <div className="absolute bottom-0 right-4 w-72 h-72 bg-blue-500 rounded-full opacity-10 filter blur-3xl"></div>
                 
                 {/* Workspace cards */}
-                <div className="relative card-hover glass bg-dark-850 rounded-xl p-6 shadow-lg transform rotate-y-10">
+                <motion.div 
+                  className="relative card-hover glass bg-dark-850 rounded-xl p-6 shadow-lg transform rotate-y-10"
+                  whileHover={{ 
+                    scale: 1.05, 
+                    zIndex: 10,
+                    transition: { type: "spring", stiffness: 300, damping: 10 }
+                  }}
+                >
                   <div className="flex justify-between items-start mb-6">
                     <div>
                       <h4 className="text-xl font-bold text-white mb-1">Web Development</h4>
@@ -137,9 +144,16 @@ const About = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
                 
-                <div className="absolute top-1/4 -right-16 card-hover glass bg-dark-850 rounded-xl p-5 shadow-lg transform rotate-y-10 w-64">
+                <motion.div 
+                  className="absolute top-1/4 -right-16 card-hover glass bg-dark-850 rounded-xl p-5 shadow-lg transform rotate-y-10 w-64"
+                  whileHover={{ 
+                    scale: 1.05, 
+                    zIndex: 10,
+                    transition: { type: "spring", stiffness: 300, damping: 10 }
+                  }}
+                >
                   <div className="flex items-center space-x-3 mb-4">
                     <div className="w-10 h-10 rounded-xl bg-indigo-600 bg-opacity-20 flex items-center justify-center">
                       <FaGamepad className="text-indigo-400" />
@@ -157,9 +171,16 @@ const About = () => {
                   <div className="w-full h-1 bg-dark rounded-full overflow-hidden">
                     <div className="skill-progress-bar w-0" data-width="90%" style={{ background: "linear-gradient(to right, #4f46e5, #818cf8)" }}></div>
                   </div>
-                </div>
+                </motion.div>
                 
-                <div className="absolute -bottom-8 -left-16 card-hover glass bg-dark-850 rounded-xl p-4 shadow-lg transform rotate-y-10 w-56">
+                <motion.div 
+                  className="absolute -bottom-8 -left-16 card-hover glass bg-dark-850 rounded-xl p-4 shadow-lg transform rotate-y-10 w-56"
+                  whileHover={{ 
+                    scale: 1.05, 
+                    zIndex: 10,
+                    transition: { type: "spring", stiffness: 300, damping: 10 }
+                  }}
+                >
                   <div className="flex items-center space-x-3 mb-3">
                     <div className="w-8 h-8 rounded-xl bg-teal-500 bg-opacity-20 flex items-center justify-center">
                       <FaPencilAlt className="text-teal-400" />
@@ -174,7 +195,7 @@ const About = () => {
                   <div className="w-full h-1 bg-dark rounded-full overflow-hidden">
                     <div className="skill-progress-bar w-0" data-width="85%" style={{ background: "linear-gradient(to right, #14b8a6, #2dd4bf)" }}></div>
                   </div>
-                </div>
+                </motion.div>
               </div>
             </div>
           </motion.div>
