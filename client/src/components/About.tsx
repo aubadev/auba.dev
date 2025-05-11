@@ -20,7 +20,9 @@ const About = () => {
   }, [isInView]);
 
   return (
-    <section id="about" className="py-24 bg-dark-800 relative">
+    <section id="about" className="py-24 relative" style={{
+      background: "linear-gradient(135deg, #0A0A15 0%, #141428 50%, #0C0C1A 100%)"
+    }}>
       <div className="container mx-auto px-6">
         <motion.div 
           className="mb-16 text-center max-w-3xl mx-auto"
@@ -66,6 +68,8 @@ const About = () => {
               <div className="flex flex-wrap gap-4">
                 <a 
                   href="https://github.com/AuBaSweaty" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center space-x-2 bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-800 hover:to-gray-900 text-white font-medium py-2 px-5 rounded-lg transition-all duration-300 hover:-translate-y-1"
                 >
                   <FaGithub />

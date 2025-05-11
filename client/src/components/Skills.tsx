@@ -4,7 +4,9 @@ import { skillsData } from "@/lib/constants";
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-24 bg-dark relative">
+    <section id="skills" className="py-24 relative" style={{
+      background: "radial-gradient(circle at 10% 20%, #0A0A18 0%, #090916 60%, #07070E 100%)"
+    }}>
       <div className="container mx-auto px-6">
         <motion.div 
           className="mb-16 text-center max-w-3xl mx-auto"

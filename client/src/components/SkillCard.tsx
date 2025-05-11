@@ -63,25 +63,46 @@ const SkillCard = ({ skill, index }: SkillCardProps) => {
   return (
     <motion.div 
       className="perspective"
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: index * 0.05 }}
+      initial={{ opacity: 0, y: 40, scale: 0.9 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ 
+        type: "spring", 
+        stiffness: 100, 
+        damping: 15, 
+        delay: index * 0.07 
+      }}
     >
       <motion.div 
-        className="bg-dark-850/80 backdrop-blur-sm rounded-xl p-5 glass card-hover border border-dark-800"
+        className="bg-dark-850/80 backdrop-blur-sm rounded-xl p-5 glass card-hover border border-dark-800 relative overflow-hidden"
         whileHover={{ 
-          scale: 1.05,
-          rotateY: 10,
-          boxShadow: "0 10px 30px -5px rgba(0, 0, 0, 0.3)"
+          y: -8,
+          boxShadow: "0 20px 40px -10px rgba(0, 0, 0, 0.5)",
+          transition: { type: "spring", stiffness: 400, damping: 10 }
         }}
       >
-        <div className="flex items-center justify-center h-12 mb-3">
+        <motion.div 
+          className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10 opacity-0"
+          whileHover={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+        />
+        
+        <motion.div 
+          className="flex items-center justify-center h-12 mb-3"
+          whileHover={{ scale: 1.1, rotate: 5 }}
+          transition={{ type: "spring", stiffness: 400 }}
+        >
           {renderIcon()}
-        </div>
+        </motion.div>
+        
         <div className="relative overflow-hidden">
           <h3 className="text-center text-white font-medium">{name}</h3>
-          <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-primary via-secondary to-accent"></div>
+          <motion.div 
+            className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary via-secondary to-accent"
+            initial={{ width: "0%" }}
+            whileInView={{ width: "100%" }}
+            transition={{ duration: 0.5, delay: index * 0.07 + 0.3 }}
+          />
         </div>
       </motion.div>
     </motion.div>
