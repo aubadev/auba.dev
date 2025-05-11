@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { FaDiscord, FaArrowRight, FaGithub, FaChevronDown } from "react-icons/fa";
 import ParticleCanvas from "./ParticleCanvas";
-import { Typed } from 'react-typed';
+import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
   return (
@@ -54,19 +54,21 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7, duration: 0.5 }}
           >
-            <Typed
-              strings={[
+            <TypeAnimation
+              sequence={[
                 "I'm skilled in HTML, CSS, JS and more.",
+                1000,
                 "Love coding cool stuff for the web.",
-                "Creating with modern technologies and creative solutions."
+                1000,
+                "Creating with modern technologies and creative solutions.",
+                1000
               ]}
-              typeSpeed={40}
-              backSpeed={30}
-              backDelay={1000}
-              loop
-              showCursor
-              cursorChar="|"
+              speed={40}
+              deletionSpeed={30}
+              repeat={Infinity}
+              cursor={true}
               className="typed-text"
+              style={{ display: 'inline-block' }}
             />
           </motion.div>
           

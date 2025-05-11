@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
-import { FaDiscord, FaBars, FaTimes } from "react-icons/fa";
+import { FaDiscord, FaBars, FaTimes, FaGithub } from "react-icons/fa";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
