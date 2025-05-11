@@ -13,8 +13,9 @@ import {
   FaMobileAlt,
   FaVideo,
   FaPython,
+  FaReact,
 } from "react-icons/fa";
-import { SiAdobeaftereffects, SiAdobephotoshop } from "react-icons/si";
+import { SiAdobeaftereffects, SiAdobephotoshop, SiTypescript } from "react-icons/si";
 
 interface SkillCardProps {
   skill: Skill;
@@ -55,6 +56,10 @@ const SkillCard = ({ skill, index }: SkillCardProps) => {
         return <FaVideo className={`text-3xl ${color}`} />;
       case "FaPython":
         return <FaPython className={`text-3xl ${color}`} />;
+      case "FaReact":
+        return <FaReact className={`text-3xl ${color}`} />;
+      case "SiTypescript":
+        return <SiTypescript className={`text-3xl ${color}`} />;
       default:
         return <FaCode className={`text-3xl ${color}`} />;
     }

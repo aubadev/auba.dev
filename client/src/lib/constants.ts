@@ -33,6 +33,16 @@ export const skillsData: Skill[] = [
     color: "text-yellow-400"
   },
   {
+    name: "TypeScript",
+    icon: "SiTypescript",
+    color: "text-blue-600"
+  },
+  {
+    name: "React",
+    icon: "FaReact",
+    color: "text-cyan-400"
+  },
+  {
     name: "LUA",
     icon: "FaCode",
     color: "text-blue-300"
