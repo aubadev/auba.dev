@@ -1,20 +1,3 @@
-import React from "react";
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaJsSquare,
-  FaCode,
-  FaMicrosoft,
-  FaPhp,
-  FaNodeJs,
-  FaCodeBranch,
-  FaApple,
-  FaAdobe,
-  FaMobileAlt,
-  FaVideo,
-  FaPython
-} from "react-icons/fa";
-
 export type ProjectCategory = "web" | "game" | "client";
 
 export interface Project {
@@ -28,66 +11,81 @@ export interface Project {
 
 export interface Skill {
   name: string;
-  icon: React.ReactNode;
+  icon: string;
+  color: string;
 }
 
-// Skills data with icons
+// Skills data with icon names
 export const skillsData: Skill[] = [
   {
     name: "HTML",
-    icon: <FaHtml5 className="text-3xl text-orange-500" />
+    icon: "FaHtml5",
+    color: "text-orange-500"
   },
   {
     name: "CSS",
-    icon: <FaCss3Alt className="text-3xl text-blue-500" />
+    icon: "FaCss3Alt",
+    color: "text-blue-500"
   },
   {
     name: "JavaScript",
-    icon: <FaJsSquare className="text-3xl text-yellow-400" />
+    icon: "FaJsSquare",
+    color: "text-yellow-400"
   },
   {
     name: "LUA",
-    icon: <FaCode className="text-3xl text-blue-300" />
+    icon: "FaCode",
+    color: "text-blue-300"
   },
   {
     name: "C#",
-    icon: <FaMicrosoft className="text-3xl text-purple-500" />
+    icon: "FaMicrosoft",
+    color: "text-purple-500"
   },
   {
     name: "PHP",
-    icon: <FaPhp className="text-3xl text-indigo-400" />
+    icon: "FaPhp",
+    color: "text-indigo-400"
   },
   {
     name: "NodeJS",
-    icon: <FaNodeJs className="text-3xl text-green-500" />
+    icon: "FaNodeJs",
+    color: "text-green-500"
   },
   {
     name: "C++",
-    icon: <FaCodeBranch className="text-3xl text-blue-600" />
+    icon: "FaCodeBranch",
+    color: "text-blue-600"
   },
   {
     name: "XCode/Swift",
-    icon: <FaApple className="text-3xl text-gray-300" />
+    icon: "FaApple",
+    color: "text-gray-300"
   },
   {
     name: "Photoshop",
-    icon: <FaAdobe className="text-3xl text-red-400" />
+    icon: "SiAdobephotoshop",
+    color: "text-red-400"
   },
   {
     name: "After Effects",
-    icon: <FaAdobe className="text-3xl text-purple-400" />
+    icon: "SiAdobeaftereffects",
+    color: "text-purple-400"
   },
   {
     name: "Responsive",
-    icon: <FaMobileAlt className="text-3xl text-teal-400" />
+    icon: "FaMobileAlt",
+    color: "text-teal-400"
   },
   {
     name: "Davinci",
-    icon: <FaVideo className="text-3xl text-blue-400" />
+    icon: "FaVideo",
+    color: "text-blue-400"
   },
   {
     name: "Python",
-    icon: <FaPython className="text-3xl text-yellow-300" />
+    icon: "FaPython",
+    color: "text-yellow-300"
   },
 ];
 
