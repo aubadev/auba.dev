@@ -38,8 +38,14 @@ const Header = () => {
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrollPosition > 50 ? 'bg-transparent backdrop-blur-sm' : 'bg-transparent'
+        scrollPosition > 50 ? 'bg-dark shadow-lg' : 'glass rounded-b-xl'
       }`}
+      style={{
+        backgroundImage: scrollPosition <= 50 ? `url(${headerBg})` : 'none',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
@@ -81,20 +87,13 @@ const Header = () => {
         </nav>
         
         {/* Discord Button (Desktop) */}
-        <div className="hidden md:flex items-center space-x-3">
+        <div className="hidden md:flex items-center">
           <a 
             href="https://discord.gg/ps9WT636e2" 
-            className="flex items-center space-x-2 bg-gradient-to-r from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700 text-white px-3 py-2 rounded-lg transition-all duration-300 hover:-translate-y-1"
+            className="flex items-center space-x-2 bg-gradient-to-r from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700 text-white px-4 py-2 rounded-lg transition-all duration-300 hover:-translate-y-1"
           >
-            <FaDiscord />
+            <FaDiscord className="text-lg" />
             <span>Discord</span>
-          </a>
-          <a 
-            href="https://github.com/AuBaSweaty" 
-            className="flex items-center space-x-2 bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-800 hover:to-gray-900 text-white px-3 py-2 rounded-lg transition-all duration-300 hover:-translate-y-1"
-          >
-            <FaGithub />
-            <span>GitHub</span>
           </a>
         </div>
         
