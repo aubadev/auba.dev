@@ -54,7 +54,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.5 }}
           >
-            Hey, I'm <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-teal-400 bg-clip-text text-transparent">AuBa</span>
+            Hey, I'm <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-teal-400 bg-clip-text text-transparent text-glitch">AuBa</span>
           </motion.h1>
           
           <motion.div 

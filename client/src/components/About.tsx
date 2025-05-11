@@ -51,7 +51,7 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className="bg-dark-850 p-8 rounded-2xl glass card-hover">
+            <div className="bg-dark-850 p-8 rounded-2xl glass card-hover spotlight" id="about-spotlight">
               <h3 className="text-2xl font-display font-bold text-white mb-6">My Journey</h3>
               <p className="text-light-600 mb-6">
                 I'm AuBa, a dedicated <span className="text-indigo-400 font-medium">Full Stack Web Developer</span> with a strong focus
@@ -64,13 +64,6 @@ const About = () => {
                 tech world. Be sure to check out some of my featured work in the <span className="text-indigo-400 font-medium">Projects</span> section!
               </p>
               <div className="flex flex-wrap gap-4">
-                <a 
-                  href="https://discord.gg/ps9WT636e2" 
-                  className="inline-flex items-center space-x-2 bg-gradient-to-r from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700 text-white font-medium py-2 px-5 rounded-lg transition-all duration-300 hover:-translate-y-1"
-                >
-                  <FaDiscord />
-                  <span>Connect on Discord</span>
-                </a>
                 <a 
                   href="https://github.com/AuBaSweaty" 
                   className="inline-flex items-center space-x-2 bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-800 hover:to-gray-900 text-white font-medium py-2 px-5 rounded-lg transition-all duration-300 hover:-translate-y-1"

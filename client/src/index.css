@@ -189,11 +189,70 @@
 
 /* Neon-Glow-Pulsieren */
 .neon-pulse {
-  box-shadow: 0 0 5px #fff, 
+  text-shadow: 0 0 5px #fff, 
               0 0 10px #fff, 
               0 0 15px var(--primary-color, #4F46E5), 
               0 0 20px var(--primary-color, #4F46E5);
   animation: pulse 2s infinite alternate;
+}
+
+/* Parallax-Effekt */
+.parallax-container {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 8px;
+  perspective-origin: 0%;
+}
+
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax-layer-back {
+  transform: translateZ(0px) scale(1);
+  z-index: 0;
+}
+
+.parallax-layer-mid {
+  transform: translateZ(2px) scale(0.75);
+  z-index: 1;
+}
+
+.parallax-layer-front {
+  transform: translateZ(4px) scale(0.5);
+  z-index: 2;
+}
+
+/* Spotlight-Hover-Effekt */
+.spotlight {
+  position: relative;
+  overflow: hidden;
+}
+
+.spotlight::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    rgba(255, 255, 255, 0.2) 0%,
+    transparent 50%
+  );
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.spotlight:hover::before {
+  opacity: 1;
 }
 
 /* 2025 Modern Theme Colors */
