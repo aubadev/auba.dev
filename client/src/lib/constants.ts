@@ -1,5 +1,13 @@
 export type ProjectCategory = "web" | "game" | "client";
 
+// Projekt-Bilder importieren
+import favelaImage from "@/assets/images/projects/favela.png";
+import shooterImage from "@/assets/images/projects/shooter.png";
+import paradiseImage from "@/assets/images/projects/LIVEINPARADISE_LOGO.png";
+import telekomImage from "@/assets/images/projects/telekom_tarife.png";
+import krachlattenImage from "@/assets/images/projects/krachlatten.png";
+import musicbotImage from "@/assets/images/projects/dc_musicbot.png";
+
 export interface Project {
   title: string;
   description: string;
@@ -101,7 +109,7 @@ export const projectsData: Project[] = [
     title: "FavelaV - Your Roleplay Community with 💙",
     description: "FavelaV is a dynamic roleplay community where boundaries and boredom don't exist. It provides a welcoming environment for newcomers, encouraging players to immerse themselves in engaging storylines and a supportive community.",
     year: "2022-2023",
-    image: "https://aubasweaty.de/images/favela.png",
+    image: favelaImage,
     categories: ["web", "game"],
     technologies: ["HTML", "CSS", "JavaScript", "Lua"]
   },
@@ -109,7 +117,7 @@ export const projectsData: Project[] = [
     title: "SHOOTER CRIMELIFE",
     description: "SHOOTER CRIMELIFE is an action-packed game that focuses on intense crime-based scenarios. The development involved creating both a web presence and the game's server-side mechanics with immersive gameplay.",
     year: "2023",
-    image: "https://aubasweaty.de/images/shooter.png",
+    image: shooterImage,
     categories: ["web", "game"],
     technologies: ["HTML", "CSS", "JavaScript", "Lua"]
   },
@@ -117,7 +125,7 @@ export const projectsData: Project[] = [
     title: "Life in Paradise",
     description: "Life in Paradise offers a serene yet adventurous roleplay environment, allowing players to live out unique scenarios in a visually rich world with smooth interactions and an immersive experience.",
     year: "2023",
-    image: "https://aubasweaty.de/images/LIVEINPARADISE_LOGO.png",
+    image: paradiseImage,
     categories: ["web", "game"],
     technologies: ["HTML", "CSS", "JavaScript", "Lua"]
   },
@@ -125,7 +133,7 @@ export const projectsData: Project[] = [
     title: "Telekom Tarife Übersicht",
     description: "This project is a comprehensive web solution providing users with an overview of various DSL packages offered by Telekom. The design is user-friendly, helping customers compare different packages efficiently.",
     year: "2024",
-    image: "https://aubasweaty.de/images/telekom_tarife.png",
+    image: telekomImage,
     categories: ["web", "client"],
     technologies: ["HTML", "CSS", "JavaScript"]
   },
@@ -133,8 +141,16 @@ export const projectsData: Project[] = [
     title: "Krachlatten Forum",
     description: "Krachlatten Forum is a modern community platform that enables users to engage in discussions, share ideas, and connect with like-minded individuals in a user-friendly and visually appealing environment.",
     year: "2024-2025",
-    image: "https://aubasweaty.de/images/krachlatten.png",
+    image: krachlattenImage,
     categories: ["web", "client"],
-    technologies: ["HTML", "CSS", "JavaScript", "PHP"]
+    technologies: ["HTML", "CSS", "JavaScript"]
+  },
+  {
+    title: "Discord Music Bot",
+    description: "Ein voll funktionaler Discord Music Bot mit vielen Funktionen wie Warteschlange, Playlist-Unterstützung, Pausieren und Fortsetzen. Entwickelt für die Krachlatten Community.",
+    year: "2024",
+    image: musicbotImage,
+    categories: ["web", "client"],
+    technologies: ["JavaScript", "NodeJS"]
   }
 ];
