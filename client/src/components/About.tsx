@@ -29,10 +29,10 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="inline-block px-3 py-1 bg-primary bg-opacity-20 text-primary rounded-full text-sm font-medium mb-4">
+          <span className="inline-block px-3 py-1 bg-gradient-to-r from-secondary/20 to-accent/20 text-transparent bg-clip-text text-gradient rounded-full text-sm font-medium mb-4 border border-secondary/20">
             About Me
           </span>
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-secondary via-accent to-primary mb-6">
             Get to know me
           </h2>
           <p className="text-light-600">

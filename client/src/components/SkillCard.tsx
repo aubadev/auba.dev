@@ -69,7 +69,7 @@ const SkillCard = ({ skill, index }: SkillCardProps) => {
       transition={{ duration: 0.5, delay: index * 0.05 }}
     >
       <motion.div 
-        className="bg-dark-850 rounded-xl p-5 glass card-hover"
+        className="bg-dark-850/80 backdrop-blur-sm rounded-xl p-5 glass card-hover border border-dark-800"
         whileHover={{ 
           scale: 1.05,
           rotateY: 10,
@@ -79,7 +79,10 @@ const SkillCard = ({ skill, index }: SkillCardProps) => {
         <div className="flex items-center justify-center h-12 mb-3">
           {renderIcon()}
         </div>
-        <h3 className="text-center text-white font-medium">{name}</h3>
+        <div className="relative overflow-hidden">
+          <h3 className="text-center text-white font-medium">{name}</h3>
+          <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-primary via-secondary to-accent"></div>
+        </div>
       </motion.div>
     </motion.div>
   );

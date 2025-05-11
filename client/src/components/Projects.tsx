@@ -20,10 +20,10 @@ const Projects = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="inline-block px-3 py-1 bg-primary bg-opacity-20 text-primary rounded-full text-sm font-medium mb-4">
+          <span className="inline-block px-3 py-1 bg-gradient-to-r from-accent/20 to-primary/20 text-transparent bg-clip-text text-gradient rounded-full text-sm font-medium mb-4 border border-accent/20">
             My Work
           </span>
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-accent via-primary to-secondary mb-6">
             Featured Projects
           </h2>
           <p className="text-light-600">
@@ -39,9 +39,9 @@ const Projects = () => {
           <motion.button 
             className={`px-4 py-2 rounded-lg ${
               activeCategory === 'all' 
-                ? 'bg-primary text-white' 
-                : 'bg-dark-850 text-light-600 hover:bg-primary hover:text-white'
-            } transition-colors duration-300`}
+                ? 'bg-gradient-to-r from-primary to-primary-light text-white font-medium' 
+                : 'bg-dark-850 text-light-600 hover:bg-primary/10 hover:text-primary'
+            } transition-all duration-300`}
             onClick={() => setActiveCategory('all')}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -52,9 +52,9 @@ const Projects = () => {
           <motion.button 
             className={`px-4 py-2 rounded-lg ${
               activeCategory === 'web' 
-                ? 'bg-primary text-white' 
-                : 'bg-dark-850 text-light-600 hover:bg-primary hover:text-white'
-            } transition-colors duration-300`}
+                ? 'bg-gradient-to-r from-secondary to-secondary-light text-white font-medium' 
+                : 'bg-dark-850 text-light-600 hover:bg-secondary/10 hover:text-secondary'
+            } transition-all duration-300`}
             onClick={() => setActiveCategory('web')}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -65,9 +65,9 @@ const Projects = () => {
           <motion.button 
             className={`px-4 py-2 rounded-lg ${
               activeCategory === 'game' 
-                ? 'bg-primary text-white' 
-                : 'bg-dark-850 text-light-600 hover:bg-primary hover:text-white'
-            } transition-colors duration-300`}
+                ? 'bg-gradient-to-r from-accent to-accent-light text-white font-medium' 
+                : 'bg-dark-850 text-light-600 hover:bg-accent/10 hover:text-accent'
+            } transition-all duration-300`}
             onClick={() => setActiveCategory('game')}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -78,9 +78,9 @@ const Projects = () => {
           <motion.button 
             className={`px-4 py-2 rounded-lg ${
               activeCategory === 'client' 
-                ? 'bg-primary text-white' 
-                : 'bg-dark-850 text-light-600 hover:bg-primary hover:text-white'
-            } transition-colors duration-300`}
+                ? 'bg-gradient-to-r from-primary to-secondary text-white font-medium' 
+                : 'bg-dark-850 text-light-600 hover:bg-primary/10 hover:text-primary'
+            } transition-all duration-300`}
             onClick={() => setActiveCategory('client')}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

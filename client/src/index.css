@@ -121,17 +121,17 @@
   animation: reveal 0.7s ease-out forwards;
 }
 
-/* Dark theme colors */
+/* 2025 Modern Theme Colors */
 .bg-dark {
-  background-color: #121212;
+  background-color: #0A0A10;
 }
 
 .bg-dark-800 {
-  background-color: #1E1E1E;
+  background-color: #121220;
 }
 
 .bg-dark-850 {
-  background-color: #181818;
+  background-color: #0E0E18;
 }
 
 .text-light {
@@ -142,34 +142,93 @@
   color: #D5D5D5;
 }
 
+/* Primary Indigo Color */
 .bg-primary {
-  background-color: #e94343;
+  background-color: #4F46E5;
 }
 
 .text-primary {
-  color: #e94343;
+  color: #4F46E5;
 }
 
 .hover\:text-primary:hover {
-  color: #e94343;
+  color: #4F46E5;
 }
 
 .border-primary {
-  border-color: #e94343;
+  border-color: #4F46E5;
 }
 
 .from-primary {
-  --tw-gradient-from: #e94343;
+  --tw-gradient-from: #4F46E5;
 }
 
 .to-primary-light {
-  --tw-gradient-to: #ff7b7b;
+  --tw-gradient-to: #818CF8;
+}
+
+/* Secondary Purple Color */
+.bg-secondary {
+  background-color: #8B5CF6;
+}
+
+.text-secondary {
+  color: #8B5CF6;
+}
+
+.hover\:text-secondary:hover {
+  color: #8B5CF6;
+}
+
+.border-secondary {
+  border-color: #8B5CF6;
+}
+
+.from-secondary {
+  --tw-gradient-from: #8B5CF6;
+}
+
+.to-secondary-light {
+  --tw-gradient-to: #A78BFA;
+}
+
+/* Accent Teal Color */
+.bg-accent {
+  background-color: #14B8A6;
+}
+
+.text-accent {
+  color: #14B8A6;
+}
+
+.hover\:text-accent:hover {
+  color: #14B8A6;
+}
+
+.border-accent {
+  border-color: #14B8A6;
+}
+
+.from-accent {
+  --tw-gradient-from: #14B8A6;
+}
+
+.to-accent-light {
+  --tw-gradient-to: #2DD4BF;
 }
 
 /* 3D animation for skill cards */
 .skill-progress-bar {
   height: 4px;
   width: 0;
-  background: linear-gradient(to right, #e94343, #ff7b7b);
+  background: linear-gradient(to right, #4F46E5, #818CF8);
   transition: width 1.5s ease-in-out;
+}
+
+.skill-progress-bar.secondary {
+  background: linear-gradient(to right, #8B5CF6, #A78BFA);
+}
+
+.skill-progress-bar.accent {
+  background: linear-gradient(to right, #14B8A6, #2DD4BF);
 }
