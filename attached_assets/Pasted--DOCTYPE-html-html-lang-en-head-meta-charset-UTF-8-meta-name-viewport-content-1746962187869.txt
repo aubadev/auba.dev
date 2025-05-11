@@ -1,0 +1,257 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>AuBa - Coding with ❤️ | AuBaSweaty</title>
+    <meta name="description" content="AuBa - An experienced web developer specializing in HTML, CSS, JavaScript and more. Check out my projects and skills.">
+    <meta name="keywords" content="AuBaSweaty, AuBa, Webentwicklung, HTML, CSS, JavaScript, Projekte, Fähigkeiten">
+    <meta name="author" content="AuBa">
+    <meta name="google-site-verification" content="wX2xdkxqjrC4rA2EM-9bbaVpiEEFG8ae5azgeZDd-oo">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="AuBa - Coding with ❤️ | AuBaSweaty">
+    <meta property="og:description" content="AuBa - An experienced web developer specializing in HTML, CSS, JavaScript and more. Check out my projects and skills.">
+    <meta property="og:image" content="https://aubasweaty.de/img/auba.gif">
+    <meta property="og:url" content="https://aubasweaty.de">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AuBa - Coding with ❤️ | AuBaSweaty">
+    <meta name="twitter:description" content="AuBa - An experienced web developer specializing in HTML, CSS, JavaScript and more. Check out my projects and skills.">
+    <meta name="twitter:image" content="https://aubasweaty.de/images/auba.gif">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "AuBa",
+        "jobTitle": "Webentwickler",
+        "url": "https://aubasweaty.de",
+        "sameAs": [
+          "https://github.com/AuBaSweaty",
+          "https://discord.gg/WttrRqs7vv"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "AuBa"
+        }
+      }
+      </script>
+		<script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.addEventListener('contextmenu', function (e) {
+                e.preventDefault();
+            });
+
+            document.addEventListener('selectstart', function (e) {
+                e.preventDefault();
+            });
+
+            document.addEventListener('copy', function (e) {
+                e.preventDefault();
+            });
+        });
+        </script>
+
+      
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&amp;display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img src="images/auba_dc.png" alt="AuBaSweaty Logo Image" class="header__logo-img">
+          </div>
+          <span class="header__logo-sub">AuBaSweaty</span>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hey, I'm AuBa,</h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            I´m skilled in HTML, CSS, JS and more. Love coding cool stuff for the web.
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="https://discord.gg/ps9WT636e2" class="btn btn--bg">Discord</a>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub">
+            Here, you'll learn more about who I am, the work I do, and the skills 
+            I’ve honed in the fields of programming and technology. Whether it's web development 
+            or game server creation, I’m always pushing boundaries and exploring new ways to innovate.
+          </span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                I'm AuBa a dedicated <strong>Full Stack Web Developer</strong> with a strong focus
+                on building and optimizing the front-end of websites and web applications. My passion 
+                lies in delivering solutions that not only look great but also provide an exceptional 
+                user experience, contributing to the overall success of each project. Be sure to check out 
+                 some of my featured work in the <strong>Projects</strong> section!
+              </p>
+            </div>
+            <a href="https://discord.gg/ps9WT636e2" class="btn btn--med btn--theme dynamicBgClr">Discord</a>
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">LUA</div>
+              <div class="skills__skill">C#</div>
+              <div class="skills__skill">PHP</div>
+              <div class="skills__skill">NodeJS</div>
+              <div class="skills__skill">C++</div>
+              <div class="skills__skill">XCode \ Swift</div>
+              <div class="skills__skill">Adobe Photoshop</div>
+              <div class="skills__skill">Adobe After Effects</div>
+              <div class="skills__skill">Responsive Design</div>
+              <div class="skills__skill">Davinci Resolve</div>
+              <div class="skills__skill">Python</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub">
+            Welcome to my portfolio! Here, you will discover a selection of both
+            personal and client-driven projects that I've developed over the years. 
+            Each project is carefully crafted and includes a detailed case study, 
+            showcasing the challenges faced, solutions implemented, and the technologies 
+            used to bring these ideas to life.
+          </span>
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="images/favela.png" alt="Software Screenshot" class="projects__row-img" loading="lazy">
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">FavelaV - Your Roleplay Community with 💙</h3>
+              <p class="projects__row-content-desc">
+                <p class="projekt"><strong>Year:</strong> 2022-2023</p>
+                <p class="projekt"><strong>Role:</strong> Web Development, Game Server Development</p>
+                <p class="projekt"><strong>Technologies:</strong> HTML, CSS, JavaScript, Lua</p>
+                <p class="projekt2">
+                    FavelaV is a dynamic roleplay community where boundaries and boredom don't exist. It provides a welcoming environment for newcomers, encouraging players to immerse themselves in engaging storylines and a supportive community. With active participation, players are guided step-by-step, both in-game and out of character (OOC). The community centers on you and your actions, making your journey a priority.
+                </p>
+              </p>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="images/shooter.png" alt="Software Screenshot" class="projects__row-img" loading="lazy">
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">SHOOTER CRIMELIFE</h3>
+              <p class="projects__row-content-desc">
+                <p class="projekt"><strong>Year:</strong> 2023</p>
+                <p class="projekt"><strong>Role:</strong> Web Development, Game Server Development</p>
+                <p class="projekt"><strong>Technologies:</strong> HTML, CSS, JavaScript, Lua</p>
+                <p class="projekt2">
+                    SHOOTER CRIMELIFE is an action-packed game that focuses on intense crime-based scenarios. The development involved creating both a web presence and the game’s server-side mechanics. With a mix of web technologies and Lua scripting, the game provides an immersive experience for players looking for adrenaline-filled gameplay.
+                </p>
+              </p>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="images/LIVEINPARADISE_LOGO.png" alt="Software Screenshot" class="projects__row-img" loading="lazy">
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Life in Paradise</h3>
+              <p class="projects__row-content-desc">
+                <p class="projekt"><strong>Year:</strong> 2023</p>
+                <p class="projekt"><strong>Role:</strong> Web Development, Game Server Development</p>
+                <p class="projekt"><strong>Technologies:</strong> HTML, CSS, JavaScript, Lua</p>
+                <p class="projekt2">
+                    Life in Paradise offers a serene yet adventurous roleplay environment, allowing players to live out unique scenarios in a visually rich world. The game server was designed with smooth interactions and an immersive in-game experience, utilizing modern web and scripting languages to create a seamless roleplay experience.
+                </p>
+              </p>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="images/telekom_tarife.png" alt="Software Screenshot" class="projects__row-img" loading="lazy">
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Telekom Tarife Übersicht</h3>
+              <p class="projects__row-content-desc">
+                <p class="projekt"><strong>Year:</strong> 2024</p>
+                <p class="projekt"><strong>Role:</strong> Web Development</p>
+                <p class="projekt"><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                <p class="projekt2">
+                    This project is a comprehensive web solution providing users with an overview of various DSL packages offered by Telekom. The design is user-friendly, helping customers compare different packages and prices efficiently. Web development focused on delivering clarity and ease of navigation to enhance the user experience.
+                </p>
+              </p>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="images/krachlatten.png" alt="Software Screenshot" class="projects__row-img" loading="lazy">
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Krachlatten Forum</h3>
+              <p class="projects__row-content-desc">
+                <p class="projekt"><strong>Year:</strong> 2024-2025</p>
+                <p class="projekt"><strong>Role:</strong> Web Development</p>
+                <p class="projekt"><strong>Technologies:</strong> HTML, CSS, JavaScript, PHP</p>
+                <p class="projekt2">
+                    The Krachlatten Forum is a community-based platform designed to foster interaction and information exchange. Built with a combination of PHP for the backend and modern web technologies, it ensures a smooth and engaging experience for forum members. The site allows users to discuss, collaborate, and share their insights in a cohesive environment.
+                </p>
+              </p>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img src="images/dc_musicbot.png" alt="Software Screenshot" class="projects__row-img" loading="lazy">
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Krachlatten Discord MusicBot</h3>
+              <p class="projects__row-content-desc">
+                <p class="projekt"><strong>Year:</strong> 2024</p>
+                <p class="projekt"><strong>Role:</strong> Python Development</p>
+                <p class="projekt"><strong>Technologies:</strong> Python</p>
+                <p class="projekt2">
+                    The Krachlatten Discord MusicBot is a custom-built bot that allows users to enjoy music directly within Discord. Integrated with features like play, pause, resume, skip, and playlist management, the bot offers full control over the music experience. Developed in Python, it’s a versatile tool for community engagement and entertainment.
+                </p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+        <div class="main-container">
+            <div class="main-footer__lower">
+                © Copyright <script>document.write(new Date().getFullYear());</script> • Made with ❤️ by <a rel="noreferrer" target="_blank" href="https://aubasweaty.de/">AuBa</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+
+</body></html>
