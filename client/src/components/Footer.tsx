@@ -48,29 +48,6 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            {/* Social links animiert */}
-            <div>
-              <div className="flex gap-6">
-                <a 
-                  href="https://github.com/AuBaSweaty" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 rounded-full bg-dark-850/50 backdrop-blur-sm border border-white/10 flex items-center justify-center text-light-600 hover:text-white hover:bg-primary/30 hover:border-primary/50 transition-all duration-300 hover:scale-110 hover:rotate-6 hover:shadow-glow"
-                  aria-label="GitHub Profile"
-                >
-                  <FaGithub className="text-xl" />
-                </a>
-                <a 
-                  href="https://discord.gg/ps9WT636e2" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 rounded-full bg-dark-850/50 backdrop-blur-sm border border-white/10 flex items-center justify-center text-light-600 hover:text-white hover:bg-secondary/30 hover:border-secondary/50 transition-all duration-300 hover:scale-110 hover:-rotate-6 hover:shadow-glow"
-                  aria-label="Discord Server"
-                >
-                  <FaDiscord className="text-xl" />
-                </a>
-              </div>
-            </div>
           </motion.div>
         </div>
         

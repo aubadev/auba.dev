@@ -44,12 +44,15 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
         transition={{ type: "spring", stiffness: 400, damping: 17 }}
       >
         <div className="relative aspect-video overflow-hidden group">
-          {/* Project image */}
-          <img 
-            src={image} 
-            alt={`${title} Project`} 
-            className="w-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-1"
-          />
+          {/* Project image - standardized size */}
+          <div className="w-full h-full bg-dark-900 flex items-center justify-center">
+            <img 
+              src={image} 
+              alt={`${title} Project`} 
+              className="w-full h-full object-cover object-center transition-all duration-700 group-hover:scale-110 group-hover:rotate-1"
+              style={{ aspectRatio: "16/9" }}
+            />
+          </div>
           
           {/* Image overlay with 3D gradient glow effect */}
           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-tr from-primary/10 via-secondary/5 to-accent/10 transition-opacity duration-700"></div>
