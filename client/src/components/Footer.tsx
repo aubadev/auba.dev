@@ -65,7 +65,7 @@ const Footer = () => {
           </div>
           
           <p className="text-light-600 text-sm text-center md:text-right">
-            &copy; 2025 AuBaSweaty. All rights reserved. Coding with passion ❤️
+            &copy; 2025 AuBaSweaty. All rights reserved. Coding with passion 💙
           </p>
         </div>
       </div>
