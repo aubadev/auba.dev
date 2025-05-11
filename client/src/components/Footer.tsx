@@ -44,23 +44,22 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            {/* Social links */}
+            {/* Social links animiert */}
             <div>
-              <h3 className="text-xl font-display font-bold text-white mb-4">Connect with me</h3>
-              <div className="flex gap-4">
+              <div className="flex gap-6">
                 <a 
                   href="https://github.com/AuBaSweaty" 
-                  className="w-10 h-10 rounded-full bg-dark-850 flex items-center justify-center text-light-600 hover:text-white hover:bg-gray-700 transition-colors duration-300"
+                  className="w-12 h-12 rounded-full bg-dark-850/50 backdrop-blur-sm border border-white/10 flex items-center justify-center text-light-600 hover:text-white hover:bg-primary/30 hover:border-primary/50 transition-all duration-300 hover:scale-110 hover:rotate-6 hover:shadow-glow"
                   aria-label="GitHub Profile"
                 >
-                  <FaGithub />
+                  <FaGithub className="text-xl" />
                 </a>
                 <a 
                   href="https://discord.gg/WttrRqs7vv" 
-                  className="w-10 h-10 rounded-full bg-dark-850 flex items-center justify-center text-light-600 hover:text-white hover:bg-indigo-600 transition-colors duration-300"
+                  className="w-12 h-12 rounded-full bg-dark-850/50 backdrop-blur-sm border border-white/10 flex items-center justify-center text-light-600 hover:text-white hover:bg-secondary/30 hover:border-secondary/50 transition-all duration-300 hover:scale-110 hover:-rotate-6 hover:shadow-glow"
                   aria-label="Discord Server"
                 >
-                  <FaDiscord />
+                  <FaDiscord className="text-xl" />
                 </a>
               </div>
             </div>

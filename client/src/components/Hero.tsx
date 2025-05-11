@@ -88,16 +88,8 @@ const Hero = () => {
             transition={{ delay: 0.9, duration: 0.5 }}
           >
             <a 
-              href="https://discord.gg/ps9WT636e2" 
-              className="w-full sm:w-auto bg-gradient-to-r from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 hover:-translate-y-1"
-            >
-              <FaDiscord className="text-lg" />
-              <span>Discord</span>
-            </a>
-            
-            <a 
               href="https://github.com/AuBaSweaty" 
-              className="w-full sm:w-auto bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-800 hover:to-gray-900 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 hover:-translate-y-1"
+              className="w-full sm:w-auto bg-gradient-to-r from-primary to-secondary hover:from-primary-light hover:to-secondary-light text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 hover:-translate-y-1 hover:shadow-glow border border-white/10"
             >
               <FaGithub className="text-lg" />
               <span>GitHub</span>
