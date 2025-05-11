@@ -21,6 +21,8 @@ const Footer = () => {
             <div className="flex flex-wrap gap-4">
               <a 
                 href="https://discord.gg/ps9WT636e2" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center space-x-2 bg-gradient-to-r from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:-translate-y-1"
               >
                 <FaDiscord className="text-lg" />
@@ -29,6 +31,8 @@ const Footer = () => {
               
               <a 
                 href="https://github.com/AuBaSweaty" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center space-x-2 bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-800 hover:to-gray-900 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:-translate-y-1"
               >
                 <FaGithub className="text-lg" />
@@ -49,13 +53,17 @@ const Footer = () => {
               <div className="flex gap-6">
                 <a 
                   href="https://github.com/AuBaSweaty" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-dark-850/50 backdrop-blur-sm border border-white/10 flex items-center justify-center text-light-600 hover:text-white hover:bg-primary/30 hover:border-primary/50 transition-all duration-300 hover:scale-110 hover:rotate-6 hover:shadow-glow"
                   aria-label="GitHub Profile"
                 >
                   <FaGithub className="text-xl" />
                 </a>
                 <a 
-                  href="https://discord.gg/WttrRqs7vv" 
+                  href="https://discord.gg/ps9WT636e2" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-dark-850/50 backdrop-blur-sm border border-white/10 flex items-center justify-center text-light-600 hover:text-white hover:bg-secondary/30 hover:border-secondary/50 transition-all duration-300 hover:scale-110 hover:-rotate-6 hover:shadow-glow"
                   aria-label="Discord Server"
                 >

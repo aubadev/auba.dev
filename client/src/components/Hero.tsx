@@ -89,6 +89,8 @@ const Hero = () => {
           >
             <a 
               href="https://github.com/AuBaSweaty" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full sm:w-auto bg-gradient-to-r from-primary to-secondary hover:from-primary-light hover:to-secondary-light text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 hover:-translate-y-1 hover:shadow-glow border border-white/10"
             >
               <FaGithub className="text-lg" />
