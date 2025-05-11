@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 import { FaArrowRight, FaCode, FaCss3Alt, FaJsSquare } from "react-icons/fa";
 import { Project } from "@/lib/constants";
-import { useEffect, useRef } from "react";
-import VanillaTilt from "vanilla-tilt";
+import { useRef } from "react";
 
 interface ProjectCardProps {
   project: Project;
@@ -12,29 +11,6 @@ interface ProjectCardProps {
 const ProjectCard = ({ project, index }: ProjectCardProps) => {
   const { title, description, year, image, technologies, categories } = project;
   const cardRef = useRef<HTMLDivElement>(null);
-  
-  // 3D-Tilt-Effekt mit VanillaTilt
-  useEffect(() => {
-    if (cardRef.current) {
-      VanillaTilt.init(cardRef.current, {
-        max: 15,
-        speed: 400,
-        glare: true,
-        "max-glare": 0.3,
-        scale: 1.03,
-        perspective: 1000,
-        transition: true,
-        gyroscope: false
-      });
-    }
-    
-    // Cleanup
-    return () => {
-      if (cardRef.current && (cardRef.current as any).vanillaTilt) {
-        (cardRef.current as any).vanillaTilt.destroy();
-      }
-    };
-  }, []);
 
   // Get appropriate icon for each technology
   const getTechIcon = (tech: string) => {
