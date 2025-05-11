@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Base colors */
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  
+  /* Primary brand color */
+  --primary: 0 69% 50%;
+  --primary-foreground: 0 0% 100%;
+  
+  /* Secondary colors */
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  
+  /* Accent colors */
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  
+  /* Destructive colors */
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  
+  /* Ring color */
+  --ring: 240 4.9% 83.9%;
+  
+  /* Border radius */
+  --radius: 0.5rem;
+  
+  /* Custom colors */
+  --dark: 240 10% 12%;
+  --dark-light: 240 10% 16%;
+  --light: 0 0% 98%;
+  --light-muted: 0 0% 85%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply antialiased bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-light;
+  }
+  
+  .glass {
+    @apply backdrop-blur-lg bg-white/5 border border-white/10;
+  }
+  
+  .card-hover {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-10px) rotateY(5deg);
+  }
+  
+  .perspective {
+    perspective: 1000px;
+  }
+  
+  .rotate-y-10 {
+    transform: rotateY(10deg);
+  }
+  
+  .shadow-glow {
+    box-shadow: 0 0 15px rgba(233, 67, 67, 0.5);
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes reveal {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.animate-reveal {
+  animation: reveal 0.7s ease-out forwards;
+}
+
+/* Dark theme colors */
+.bg-dark {
+  background-color: #121212;
+}
+
+.bg-dark-800 {
+  background-color: #1E1E1E;
+}
+
+.bg-dark-850 {
+  background-color: #181818;
+}
+
+.text-light {
+  color: #F5F5F5;
+}
+
+.text-light-600 {
+  color: #D5D5D5;
+}
+
+.bg-primary {
+  background-color: #e94343;
+}
+
+.text-primary {
+  color: #e94343;
+}
+
+.hover\:text-primary:hover {
+  color: #e94343;
+}
+
+.border-primary {
+  border-color: #e94343;
+}
+
+.from-primary {
+  --tw-gradient-from: #e94343;
+}
+
+.to-primary-light {
+  --tw-gradient-to: #ff7b7b;
+}
+
+/* 3D animation for skill cards */
+.skill-progress-bar {
+  height: 4px;
+  width: 0;
+  background: linear-gradient(to right, #e94343, #ff7b7b);
+  transition: width 1.5s ease-in-out;
+}
