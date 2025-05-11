@@ -11,6 +11,30 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project, index }: ProjectCardProps) => {
   const { title, description, year, image, technologies, categories } = project;
+  const cardRef = useRef<HTMLDivElement>(null);
+  
+  // 3D-Tilt-Effekt mit VanillaTilt
+  useEffect(() => {
+    if (cardRef.current) {
+      VanillaTilt.init(cardRef.current, {
+        max: 15,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.3,
+        scale: 1.03,
+        perspective: 1000,
+        transition: true,
+        gyroscope: false
+      });
+    }
+    
+    // Cleanup
+    return () => {
+      if (cardRef.current && (cardRef.current as any).vanillaTilt) {
+        (cardRef.current as any).vanillaTilt.destroy();
+      }
+    };
+  }, []);
 
   // Get appropriate icon for each technology
   const getTechIcon = (tech: string) => {
@@ -39,11 +63,8 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
       transition={{ duration: 0.6, delay: index * 0.1 }}
     >
       <motion.div 
-        className="project-card bg-dark-850/90 backdrop-blur-sm rounded-2xl overflow-hidden card-hover border border-dark-800"
-        whileHover={{ 
-          scale: 1.02,
-          boxShadow: "0 20px 40px -10px rgba(0, 0, 0, 0.4)"
-        }}
+        ref={cardRef}
+        className="project-card bg-dark-850/90 backdrop-blur-sm rounded-2xl overflow-hidden border border-dark-800"
         transition={{ type: "spring", stiffness: 400, damping: 17 }}
       >
         <div className="relative aspect-video overflow-hidden group">
