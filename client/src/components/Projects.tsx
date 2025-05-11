@@ -24,13 +24,7 @@ const Projects = () => {
             My Work
           </span>
           <h2 className="text-4xl md:text-5xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-accent via-primary to-secondary mb-6">
-            <span className="text-wave">
-              {Array.from("Featured Projects").map((letter, i) => (
-                <span key={i} style={{"--i": i} as React.CSSProperties}>
-                  {letter === " " ? "\u00A0" : letter}
-                </span>
-              ))}
-            </span>
+            Featured Projects
           </h2>
           <p className="text-light-600">
             Welcome to my portfolio! Here, you will discover a selection of both
