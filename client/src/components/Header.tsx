@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
 import { FaDiscord, FaBars, FaTimes, FaGithub } from "react-icons/fa";
+import logoImage from "@/assets/images/logo.png";
+import headerBg from "@/assets/images/header-bg.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,20 +36,28 @@ const Header = () => {
   }, [isMenuOpen]);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrollPosition > 50 ? 'bg-dark shadow-lg' : 'glass rounded-b-xl'
-    }`}>
+    <header 
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrollPosition > 50 ? 'bg-dark/95 shadow-lg backdrop-blur-md' : 'glass rounded-b-xl'
+      }`}
+      style={{
+        backgroundImage: scrollPosition <= 50 ? `url(${headerBg})` : 'none',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 rounded-lg overflow-hidden bg-dark-850 flex items-center justify-center">
+          <div className="w-12 h-12 overflow-hidden flex items-center justify-center">
             <img 
-              src="https://aubasweaty.de/images/auba_dc.png" 
+              src={logoImage} 
               alt="AuBaSweaty Logo" 
-              className="w-8 h-8"
+              className="w-full h-full object-contain"
             />
           </div>
-          <span className="text-xl font-display font-bold tracking-tight">AuBaSweaty</span>
+          <span className="text-xl font-display font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">AuBaSweaty</span>
         </div>
         
         {/* Desktop Navigation */}
