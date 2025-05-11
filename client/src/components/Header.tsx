@@ -38,19 +38,13 @@ const Header = () => {
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrollPosition > 50 ? 'bg-dark shadow-lg' : 'glass rounded-b-xl'
+        scrollPosition > 50 ? 'bg-white/5 backdrop-blur-sm border-b border-white/10' : 'bg-transparent'
       }`}
-      style={{
-        backgroundImage: scrollPosition <= 50 ? `url(${headerBg})` : 'none',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-3">
-          <div className="w-12 h-12 overflow-hidden flex items-center justify-center rounded-full bg-dark/30 backdrop-blur-sm p-1">
+          <div className="w-10 h-10 overflow-hidden flex items-center justify-center rounded-full bg-white/5 backdrop-blur-sm p-1 border border-white/10 shadow-glow">
             <img 
               src={logoImage} 
               alt="AuBaSweaty Logo" 
@@ -64,22 +58,22 @@ const Header = () => {
         <nav className="hidden md:block">
           <ul className="flex items-center space-x-8">
             <li>
-              <a href="#home" className="text-light hover:text-primary transition-colors duration-300">
+              <a href="#home" className="text-light hover:text-primary transition-all duration-300 border-b-2 border-transparent hover:border-primary pb-1">
                 Home
               </a>
             </li>
             <li>
-              <a href="#about" className="text-light hover:text-primary transition-colors duration-300">
+              <a href="#about" className="text-light hover:text-primary transition-all duration-300 border-b-2 border-transparent hover:border-primary pb-1">
                 About
               </a>
             </li>
             <li>
-              <a href="#skills" className="text-light hover:text-primary transition-colors duration-300">
+              <a href="#skills" className="text-light hover:text-primary transition-all duration-300 border-b-2 border-transparent hover:border-primary pb-1">
                 Skills
               </a>
             </li>
             <li>
-              <a href="#projects" className="text-light hover:text-primary transition-colors duration-300">
+              <a href="#projects" className="text-light hover:text-primary transition-all duration-300 border-b-2 border-transparent hover:border-primary pb-1">
                 Projects
               </a>
             </li>
@@ -90,7 +84,7 @@ const Header = () => {
         <div className="hidden md:flex items-center">
           <a 
             href="https://discord.gg/ps9WT636e2" 
-            className="flex items-center space-x-2 bg-gradient-to-r from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700 text-white px-4 py-2 rounded-lg transition-all duration-300 hover:-translate-y-1"
+            className="flex items-center space-x-2 bg-gradient-to-r from-primary to-secondary hover:from-primary-light hover:to-secondary-light text-white px-4 py-2 rounded-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-glow border border-white/10"
           >
             <FaDiscord className="text-lg" />
             <span>Discord</span>
