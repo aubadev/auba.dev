@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FaDiscord, FaGithub, FaArrowUp } from "react-icons/fa";
+import logoImage from "@/assets/images/logo.png";
 
 const Footer = () => {
   return (
@@ -69,14 +70,14 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-dark-850 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-3 mb-4 md:mb-0">
-            <div className="w-8 h-8 rounded-lg overflow-hidden bg-dark-850 flex items-center justify-center">
+            <div className="w-10 h-10 overflow-hidden flex items-center justify-center">
               <img 
-                src="https://aubasweaty.de/images/auba_dc.png" 
+                src={logoImage} 
                 alt="AuBaSweaty Logo" 
-                className="w-6 h-6"
+                className="w-full h-full object-contain"
               />
             </div>
-            <span className="text-light-600 font-display">AuBaSweaty</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-accent font-display font-medium">AuBaSweaty</span>
           </div>
           
           <p className="text-light-600 text-sm text-center md:text-right">

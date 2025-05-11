@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FaDiscord, FaArrowRight, FaGithub, FaChevronDown } from "react-icons/fa";
 import ParticleCanvas from "./ParticleCanvas";
+import heroBg from "@/assets/images/hero-bg.png";
 import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
@@ -11,8 +12,16 @@ const Hero = () => {
     >
       {/* Background elements */}
       <div className="absolute inset-0 z-0">
-        {/* Gradient background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-dark via-dark-800 to-dark-800"></div>
+        {/* Gradient background with image */}
+        <div 
+          className="absolute inset-0 bg-gradient-to-br from-dark via-dark-800/90 to-dark-900/90"
+          style={{
+            backgroundImage: `url(${heroBg})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundBlendMode: 'overlay'
+          }}
+        ></div>
         
         {/* 3D particles */}
         <ParticleCanvas />
