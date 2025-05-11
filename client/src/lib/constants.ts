@@ -52,11 +52,7 @@ export const skillsData: Skill[] = [
     icon: "FaMicrosoft",
     color: "text-purple-500"
   },
-  {
-    name: "PHP",
-    icon: "FaPhp",
-    color: "text-indigo-400"
-  },
+
   {
     name: "NodeJS",
     icon: "FaNodeJs",
