@@ -13,7 +13,7 @@ const Skills = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <span className="inline-block px-3 py-1 bg-gradient-to-r from-primary/20 to-secondary/20 text-transparent bg-clip-text text-gradient rounded-full text-sm font-medium mb-4 border border-primary/20">
+          <span className="inline-block px-3 py-1 gradient-text-flow rounded-full text-sm font-medium mb-4 border border-primary/20">
             My Expertise
           </span>
           <h2 className="text-4xl md:text-5xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-accent mb-6 neon-pulse" style={{"--primary-color": "#4F46E5"} as React.CSSProperties}>

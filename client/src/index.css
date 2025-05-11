@@ -255,6 +255,35 @@
   opacity: 1;
 }
 
+/* Gradient Flow Animation */
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-flow {
+  background: linear-gradient(-45deg, #4F46E5, #8B5CF6, #3B82F6, #10B981);
+  background-size: 400% 400%;
+  animation: gradient-flow 15s ease infinite;
+  position: relative;
+}
+
+.gradient-text-flow {
+  background: linear-gradient(-45deg, #4F46E5, #8B5CF6, #3B82F6, #10B981);
+  background-size: 400% 400%;
+  animation: gradient-flow 15s ease infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 /* 2025 Modern Theme Colors */
 .bg-dark {
   background-color: #0A0A10;
