@@ -40,7 +40,7 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 rounded-lg overflow-hidden bg-primary flex items-center justify-center shadow-glow">
+          <div className="w-10 h-10 rounded-lg overflow-hidden bg-dark-850 flex items-center justify-center">
             <img 
               src="https://aubasweaty.de/images/auba_dc.png" 
               alt="AuBaSweaty Logo" 
@@ -77,13 +77,22 @@ const Header = () => {
         </nav>
         
         {/* Discord Button (Desktop) */}
-        <a 
-          href="https://discord.gg/ps9WT636e2" 
-          className="hidden md:flex items-center space-x-2 bg-primary bg-opacity-90 hover:bg-primary/80 text-white px-4 py-2 rounded-lg transition-colors duration-300"
-        >
-          <FaDiscord />
-          <span>Join Discord</span>
-        </a>
+        <div className="hidden md:flex items-center space-x-3">
+          <a 
+            href="https://discord.gg/ps9WT636e2" 
+            className="flex items-center space-x-2 bg-gradient-to-r from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700 text-white px-3 py-2 rounded-lg transition-all duration-300 hover:-translate-y-1"
+          >
+            <FaDiscord />
+            <span>Discord</span>
+          </a>
+          <a 
+            href="https://github.com/AuBaSweaty" 
+            className="flex items-center space-x-2 bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-800 hover:to-gray-900 text-white px-3 py-2 rounded-lg transition-all duration-300 hover:-translate-y-1"
+          >
+            <FaGithub />
+            <span>GitHub</span>
+          </a>
+        </div>
         
         {/* Mobile Menu Button */}
         <button 

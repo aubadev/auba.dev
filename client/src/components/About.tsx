@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { FaDiscord, FaCode, FaGamepad, FaPencilAlt } from "react-icons/fa";
+import { FaDiscord, FaCode, FaGamepad, FaPencilAlt, FaGithub } from "react-icons/fa";
 
 const About = () => {
   const skillsRef = useRef<HTMLDivElement>(null);
@@ -54,22 +54,31 @@ const About = () => {
             <div className="bg-dark-850 p-8 rounded-2xl glass card-hover">
               <h3 className="text-2xl font-display font-bold text-white mb-6">My Journey</h3>
               <p className="text-light-600 mb-6">
-                I'm AuBa, a dedicated <span className="text-primary font-medium">Full Stack Web Developer</span> with a strong focus
+                I'm AuBa, a dedicated <span className="text-indigo-400 font-medium">Full Stack Web Developer</span> with a strong focus
                 on building and optimizing the front-end of websites and web applications. My passion 
                 lies in delivering solutions that not only look great but also provide an exceptional 
                 user experience, contributing to the overall success of each project.
               </p>
               <p className="text-light-600 mb-8">
                 I constantly push myself to learn new technologies and stay updated with the latest trends in the
-                tech world. Be sure to check out some of my featured work in the <span className="text-primary font-medium">Projects</span> section!
+                tech world. Be sure to check out some of my featured work in the <span className="text-indigo-400 font-medium">Projects</span> section!
               </p>
-              <a 
-                href="https://discord.gg/ps9WT636e2" 
-                className="inline-flex items-center space-x-2 bg-primary hover:bg-primary/80 text-white font-medium py-2 px-5 rounded-lg transition-all duration-300 hover:-translate-y-1"
-              >
-                <FaDiscord />
-                <span>Connect on Discord</span>
-              </a>
+              <div className="flex flex-wrap gap-4">
+                <a 
+                  href="https://discord.gg/ps9WT636e2" 
+                  className="inline-flex items-center space-x-2 bg-gradient-to-r from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700 text-white font-medium py-2 px-5 rounded-lg transition-all duration-300 hover:-translate-y-1"
+                >
+                  <FaDiscord />
+                  <span>Connect on Discord</span>
+                </a>
+                <a 
+                  href="https://github.com/AuBaSweaty" 
+                  className="inline-flex items-center space-x-2 bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-800 hover:to-gray-900 text-white font-medium py-2 px-5 rounded-lg transition-all duration-300 hover:-translate-y-1"
+                >
+                  <FaGithub />
+                  <span>GitHub</span>
+                </a>
+              </div>
             </div>
           </motion.div>
           
@@ -133,10 +142,10 @@ const About = () => {
                   </div>
                 </div>
                 
-                <div className="absolute top-1/4 -right-8 card-hover glass bg-dark-850 rounded-xl p-5 shadow-lg transform rotate-y-10 w-64">
+                <div className="absolute top-1/4 -right-16 card-hover glass bg-dark-850 rounded-xl p-5 shadow-lg transform rotate-y-10 w-64">
                   <div className="flex items-center space-x-3 mb-4">
-                    <div className="w-10 h-10 rounded-xl bg-primary bg-opacity-20 flex items-center justify-center">
-                      <FaGamepad className="text-primary" />
+                    <div className="w-10 h-10 rounded-xl bg-indigo-600 bg-opacity-20 flex items-center justify-center">
+                      <FaGamepad className="text-indigo-400" />
                     </div>
                     <div>
                       <h4 className="text-sm font-bold text-white">Game Development</h4>
@@ -146,27 +155,27 @@ const About = () => {
                   
                   <div className="flex justify-between items-center mb-1">
                     <span className="text-xs text-light-600">Server Development</span>
-                    <span className="text-xs text-primary">90%</span>
+                    <span className="text-xs text-indigo-400">90%</span>
                   </div>
                   <div className="w-full h-1 bg-dark rounded-full overflow-hidden">
-                    <div className="skill-progress-bar w-0" data-width="90%"></div>
+                    <div className="skill-progress-bar w-0" data-width="90%" style={{ background: "linear-gradient(to right, #4f46e5, #818cf8)" }}></div>
                   </div>
                 </div>
                 
-                <div className="absolute -bottom-4 -left-4 card-hover glass bg-dark-850 rounded-xl p-4 shadow-lg transform rotate-y-10 w-56">
+                <div className="absolute -bottom-8 -left-16 card-hover glass bg-dark-850 rounded-xl p-4 shadow-lg transform rotate-y-10 w-56">
                   <div className="flex items-center space-x-3 mb-3">
-                    <div className="w-8 h-8 rounded-xl bg-blue-500 bg-opacity-20 flex items-center justify-center">
-                      <FaPencilAlt className="text-blue-400" />
+                    <div className="w-8 h-8 rounded-xl bg-teal-500 bg-opacity-20 flex items-center justify-center">
+                      <FaPencilAlt className="text-teal-400" />
                     </div>
                     <h4 className="text-sm font-bold text-white">Creative Work</h4>
                   </div>
                   
                   <div className="flex justify-between items-center mb-1">
                     <span className="text-xs text-light-600">Design</span>
-                    <span className="text-xs text-blue-400">85%</span>
+                    <span className="text-xs text-teal-400">85%</span>
                   </div>
                   <div className="w-full h-1 bg-dark rounded-full overflow-hidden">
-                    <div className="skill-progress-bar w-0" data-width="85%" style={{ background: "linear-gradient(to right, #3b82f6, #60a5fa)" }}></div>
+                    <div className="skill-progress-bar w-0" data-width="85%" style={{ background: "linear-gradient(to right, #14b8a6, #2dd4bf)" }}></div>
                   </div>
                 </div>
               </div>

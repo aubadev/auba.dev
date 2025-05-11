@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { FaDiscord, FaArrowRight, FaGithub, FaChevronDown } from "react-icons/fa";
 import ParticleCanvas from "./ParticleCanvas";
+import { Typed } from 'react-typed';
 
 const Hero = () => {
   return (
@@ -16,9 +17,10 @@ const Hero = () => {
         {/* 3D particles */}
         <ParticleCanvas />
         
-        {/* Radial gradients for highlights */}
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary bg-opacity-10 rounded-full filter blur-[100px]"></div>
-        <div className="absolute bottom-1/3 right-1/3 w-64 h-64 bg-blue-500 bg-opacity-10 rounded-full filter blur-[80px]"></div>
+        {/* Radial gradients for highlights - modern colors */}
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-indigo-500 bg-opacity-10 rounded-full filter blur-[100px]"></div>
+        <div className="absolute bottom-1/3 right-1/3 w-64 h-64 bg-teal-500 bg-opacity-10 rounded-full filter blur-[80px]"></div>
+        <div className="absolute top-1/2 right-1/4 w-72 h-72 bg-purple-500 bg-opacity-10 rounded-full filter blur-[120px]"></div>
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
@@ -29,12 +31,12 @@ const Hero = () => {
           transition={{ duration: 0.6 }}
         >
           <motion.div 
-            className="mb-3 flex items-center justify-center p-2 bg-dark-800 rounded-full glass"
+            className="mb-3 flex items-center justify-center p-2 bg-dark-800/50 backdrop-blur-md rounded-full glass"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.3, duration: 0.5 }}
           >
-            <span className="text-xs md:text-sm px-3 py-1">Full Stack Web Developer</span>
+            <span className="text-xs md:text-sm px-3 py-1 bg-gradient-to-r from-indigo-400 to-teal-400 bg-clip-text text-transparent font-medium">Full Stack Web Developer</span>
           </motion.div>
           
           <motion.h1 
@@ -43,17 +45,30 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.5 }}
           >
-            Hey, I'm <span className="text-gradient">AuBa</span>
+            Hey, I'm <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-teal-400 bg-clip-text text-transparent">AuBa</span>
           </motion.h1>
           
-          <motion.p 
-            className="text-xl md:text-2xl text-light-600 mb-10 max-w-2xl"
+          <motion.div 
+            className="text-xl md:text-2xl text-light-600 mb-10 max-w-2xl h-16"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.7, duration: 0.5 }}
           >
-            I'm skilled in HTML, CSS, JS and more. Love coding cool stuff for the web with modern technologies and creative solutions.
-          </motion.p>
+            <Typed
+              strings={[
+                "I'm skilled in HTML, CSS, JS and more.",
+                "Love coding cool stuff for the web.",
+                "Creating with modern technologies and creative solutions."
+              ]}
+              typeSpeed={40}
+              backSpeed={30}
+              backDelay={1000}
+              loop
+              showCursor
+              cursorChar="|"
+              className="typed-text"
+            />
+          </motion.div>
           
           <motion.div 
             className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4"
@@ -63,40 +78,26 @@ const Hero = () => {
           >
             <a 
               href="https://discord.gg/ps9WT636e2" 
-              className="w-full sm:w-auto bg-primary hover:bg-primary/80 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 shadow-glow"
+              className="w-full sm:w-auto bg-gradient-to-r from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 hover:-translate-y-1"
             >
               <FaDiscord className="text-lg" />
-              <span>Join my Discord</span>
+              <span>Discord</span>
+            </a>
+            
+            <a 
+              href="https://github.com/AuBaSweaty" 
+              className="w-full sm:w-auto bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-800 hover:to-gray-900 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 hover:-translate-y-1"
+            >
+              <FaGithub className="text-lg" />
+              <span>GitHub</span>
             </a>
             
             <a 
               href="#projects" 
-              className="w-full sm:w-auto border border-light-600 text-light hover:border-primary hover:text-primary font-semibold py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2"
+              className="w-full sm:w-auto border border-light-600/30 backdrop-blur-sm text-light hover:border-teal-400 hover:text-teal-400 font-semibold py-3 px-8 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2"
             >
               <span>View my work</span>
               <FaArrowRight className="text-sm" />
-            </a>
-          </motion.div>
-          
-          <motion.div 
-            className="mt-16 flex items-center space-x-6"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.1, duration: 0.5 }}
-          >
-            <a 
-              href="https://github.com/AuBaSweaty" 
-              className="text-light-600 hover:text-light transition-colors duration-300 text-xl"
-              aria-label="GitHub Profile"
-            >
-              <FaGithub />
-            </a>
-            <a 
-              href="https://discord.gg/WttrRqs7vv" 
-              className="text-light-600 hover:text-light transition-colors duration-300 text-xl"
-              aria-label="Discord Server"
-            >
-              <FaDiscord />
             </a>
           </motion.div>
         </motion.div>
@@ -110,7 +111,7 @@ const Hero = () => {
       >
         <motion.a 
           href="#about" 
-          className="text-light-600 hover:text-light transition-colors duration-300"
+          className="text-light-600 hover:text-indigo-400 transition-colors duration-300"
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Infinity, duration: 1.5 }}
         >

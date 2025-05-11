@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  /* Base colors */
+  /* Base colors - 2025 modern palette */
   --background: 240 10% 3.9%;
   --foreground: 0 0% 98%;
   --muted: 240 3.7% 15.9%;
@@ -15,16 +15,16 @@
   --border: 240 3.7% 15.9%;
   --input: 240 3.7% 15.9%;
   
-  /* Primary brand color */
-  --primary: 0 69% 50%;
+  /* Primary brand color - changed to indigo */
+  --primary: 244 75% 60%;
   --primary-foreground: 0 0% 100%;
   
   /* Secondary colors */
-  --secondary: 240 3.7% 15.9%;
+  --secondary: 263 50% 60%;
   --secondary-foreground: 0 0% 98%;
   
   /* Accent colors */
-  --accent: 240 3.7% 15.9%;
+  --accent: 173 80% 40%;
   --accent-foreground: 0 0% 98%;
   
   /* Destructive colors */

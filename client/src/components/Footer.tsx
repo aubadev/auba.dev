@@ -14,16 +14,26 @@ const Footer = () => {
           >
             <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-6">Let's Connect</h2>
             <p className="text-light-600 mb-8 max-w-lg">
-              Interested in working together or have a question about my work? Feel free to reach out through Discord or social media.
+              Interested in working together or have a question about my work? Feel free to reach out through Discord or GitHub.
             </p>
             
-            <a 
-              href="https://discord.gg/ps9WT636e2" 
-              className="inline-flex items-center space-x-2 bg-primary hover:bg-primary/80 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:-translate-y-1 shadow-glow"
-            >
-              <FaDiscord className="text-lg" />
-              <span>Join my Discord Server</span>
-            </a>
+            <div className="flex flex-wrap gap-4">
+              <a 
+                href="https://discord.gg/ps9WT636e2" 
+                className="inline-flex items-center space-x-2 bg-gradient-to-r from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:-translate-y-1"
+              >
+                <FaDiscord className="text-lg" />
+                <span>Discord</span>
+              </a>
+              
+              <a 
+                href="https://github.com/AuBaSweaty" 
+                className="inline-flex items-center space-x-2 bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-800 hover:to-gray-900 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:-translate-y-1"
+              >
+                <FaGithub className="text-lg" />
+                <span>GitHub</span>
+              </a>
+            </div>
           </motion.div>
           
           <motion.div
@@ -39,46 +49,19 @@ const Footer = () => {
               <div className="flex gap-4">
                 <a 
                   href="https://github.com/AuBaSweaty" 
-                  className="w-10 h-10 rounded-full bg-dark-850 flex items-center justify-center text-light-600 hover:text-white hover:bg-primary transition-colors duration-300"
+                  className="w-10 h-10 rounded-full bg-dark-850 flex items-center justify-center text-light-600 hover:text-white hover:bg-gray-700 transition-colors duration-300"
                   aria-label="GitHub Profile"
                 >
                   <FaGithub />
                 </a>
                 <a 
                   href="https://discord.gg/WttrRqs7vv" 
-                  className="w-10 h-10 rounded-full bg-dark-850 flex items-center justify-center text-light-600 hover:text-white hover:bg-primary transition-colors duration-300"
+                  className="w-10 h-10 rounded-full bg-dark-850 flex items-center justify-center text-light-600 hover:text-white hover:bg-indigo-600 transition-colors duration-300"
                   aria-label="Discord Server"
                 >
                   <FaDiscord />
                 </a>
               </div>
-            </div>
-            
-            {/* Quick links */}
-            <div>
-              <h3 className="text-xl font-display font-bold text-white mb-4">Quick Links</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#home" className="text-light-600 hover:text-primary transition-colors duration-300">
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href="#about" className="text-light-600 hover:text-primary transition-colors duration-300">
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a href="#skills" className="text-light-600 hover:text-primary transition-colors duration-300">
-                    Skills
-                  </a>
-                </li>
-                <li>
-                  <a href="#projects" className="text-light-600 hover:text-primary transition-colors duration-300">
-                    Projects
-                  </a>
-                </li>
-              </ul>
             </div>
           </motion.div>
         </div>
@@ -86,7 +69,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-dark-850 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-3 mb-4 md:mb-0">
-            <div className="w-8 h-8 rounded-lg overflow-hidden bg-primary flex items-center justify-center shadow-glow">
+            <div className="w-8 h-8 rounded-lg overflow-hidden bg-dark-850 flex items-center justify-center">
               <img 
                 src="https://aubasweaty.de/images/auba_dc.png" 
                 alt="AuBaSweaty Logo" 
