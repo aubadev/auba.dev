@@ -70,11 +70,11 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-dark-850 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-3 mb-4 md:mb-0">
-            <div className="w-10 h-10 overflow-hidden flex items-center justify-center">
+            <div className="w-10 h-10 overflow-hidden flex items-center justify-center rounded-full bg-dark-850/70 p-1">
               <img 
                 src={logoImage} 
                 alt="AuBaSweaty Logo" 
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain rounded-full"
               />
             </div>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-accent font-display font-medium">AuBaSweaty</span>

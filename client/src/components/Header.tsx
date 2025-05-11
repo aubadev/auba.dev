@@ -38,23 +38,17 @@ const Header = () => {
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrollPosition > 50 ? 'bg-dark/95 shadow-lg backdrop-blur-md' : 'glass rounded-b-xl'
+        scrollPosition > 50 ? 'bg-transparent backdrop-blur-sm' : 'bg-transparent'
       }`}
-      style={{
-        backgroundImage: scrollPosition <= 50 ? `url(${headerBg})` : 'none',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-3">
-          <div className="w-12 h-12 overflow-hidden flex items-center justify-center">
+          <div className="w-12 h-12 overflow-hidden flex items-center justify-center rounded-full bg-dark/30 backdrop-blur-sm p-1">
             <img 
               src={logoImage} 
               alt="AuBaSweaty Logo" 
-              className="w-full h-full object-contain"
+              className="w-full h-full object-contain rounded-full"
             />
           </div>
           <span className="text-xl font-display font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent">AuBaSweaty</span>
