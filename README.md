@@ -21,7 +21,7 @@ Eine moderne, interaktive Portfolio-Website mit dynamischem Design und innovativ
 1. Repository klonen:
    ```bash
    git clone https://github.com/aubadev/auba.dev.git
-   cd portfolio
+   cd auba.dev
    ```
 
 2. Abhängigkeiten installieren:
